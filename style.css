@@ -4,7 +4,7 @@
 }
 .container {
   background: #ddb0d0;
-  width: 600px;
+  width: 900px;
   height: 400px;
   margin: 40px auto;
   padding: 40px 0px;
@@ -40,7 +40,7 @@
   background-color: #c026a8;
   position: absolute;
   top: 100px;
-  left: 170px;
+  left: 290px;
   transform: rotate(45deg);
   border-radius: 50%;
 }
@@ -54,113 +54,158 @@
 }
 
 .top-right-arrow {
-  left: 420px;
+  left: 520px;
   top: 95px;
   transform: rotate(140deg);
 }
 
 .bottom-left-arrow {
-  left: 190px;
-  top: 260px;
-  transform: rotate(-50deg);
+  left: 310px;
+  top: 250px;
+  transform: rotate(-40deg);
 }
 
 .bottom-right-arrow {
-  left: 420px;
-  top: 255px;
+  left: 520px;
+  top: 245px;
   transform: rotate(-130deg);
 }
 
 /* arrow end  */
+.image {
+  width: 200px;
+  position: absolute;
+  top: 130px;
+  left: 320px;
+}
 .breathwork {
   position: absolute;
-  top: 70px;
-  left: 240px;
+  top: 80px;
+  left: 370px;
   text-align: center;
 }
 .physical-poses {
   position: absolute;
   top: 200px;
-  left: 90px;
+  left: 230px;
   text-align: center;
 }
 
 .concentration-techniques {
   position: absolute;
   top: 200px;
-  right: 70px;
+  left: 506px;
   text-align: center;
 }
 
 .meditation {
   position: absolute;
   top: 340px;
-  right: 250px;
+  left: 360px;
   text-align: center;
 }
 
-.image {
-  width: 200px;
-  position: absolute;
-  top: 130px;
-  left: 200px;
-}
-
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 950px) {
   .container {
-    width: 350px;
+    width: 100%;
   }
+}
+@media screen and (max-width: 830px) {
   .image {
-    width: 100px;
+    width: 170px;
     position: absolute;
-    top: 130px;
-    left: 100px;
+    top: 100px;
+    left: 250px;
   }
 
   .top-left-arrow { 
-    height: 60px;
-    left: 80px;
+    height: 70px;
+    left: 250px;
+    margin-top: -10px;
   }
 
   .breathwork {
     top: 70px;
-    left: 104px;
+    left: 294px;
   }
   .physical-poses {
     top: 160px;
-    left: 20px;
+    left: 180px;
   }
 
   .concentration-techniques {
     position: absolute;
     top: 160px;
-    right:20px;
+    margin-left: -100px;
     text-align: center;
   }
 
   .meditation {
     position: absolute;
-    top: 250px;
-    right:150px;
+    top: 280px;
+    left: 300px;
     text-align: center;
   }
 
 
   .top-right-arrow {
-    left: 220px;
-    top: 95px;
+    left: 430px;
+    top: 90px;
     transform: rotate(140deg);
   }
   
   .bottom-left-arrow {
-    left: 80px;
-    top: 200px;
+    left: 260px;
+    top: 220px;
     transform: rotate(-40deg);
   }
   
   .bottom-right-arrow {
-    left: 230px;
-    top: 198px;
+    left: 440px;
+    top: 220px;
     transform: rotate(-140deg);
   }
+}
+
+
+/* mobile device start  */
+
+.mobile-container {
+  background: #ddb0d0;
+  padding: 20px 10px;
+  display: none;
+}
+.mobile-items {
+text-align: center;
+}
+
+.mobile-items img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.arrow-for-mobile {
+  height: 100px;
+  width: 2px;
+  background-color: #c026a8;
+  top: 100px;
+  left: 290px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.arrow-angle-mobile {
+  margin-top: 90px;
+  transform: rotate(90deg);
+  margin-left: -3.4px;
+}
+@media screen and (max-width:620px){
+   .container {
+    display: none;
+   }  
+
+.mobile-container {
+  display: block;
+}
 }
