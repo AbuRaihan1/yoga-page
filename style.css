@@ -8,11 +8,13 @@
   height: 400px;
   margin: 40px auto;
   padding: 40px 0px;
+  padding-left: 50px;
 }
 .title {
   color: #bf1ea7;
   text-align: center;
   font-weight: bolder;
+  margin-left: -40px;
 }
 
 /* .main-content {
@@ -107,10 +109,32 @@
 
 @media screen and (max-width: 950px) {
   .container {
-    width: 100%;
+    width: 94%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .container {
+    padding-left: 10px;
+  }
+  .title {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    padding-left: 0px;
+  }
+  .title {
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 830px) {
+  .container {
+    padding-left: 20px;
+  }
+  .title {
+    margin-left: -70px;
+  }
   .image {
     width: 170px;
     position: absolute;
@@ -118,7 +142,7 @@
     left: 250px;
   }
 
-  .top-left-arrow { 
+  .top-left-arrow {
     height: 70px;
     left: 250px;
     margin-top: -10px;
@@ -147,19 +171,18 @@
     text-align: center;
   }
 
-
   .top-right-arrow {
     left: 430px;
     top: 90px;
     transform: rotate(140deg);
   }
-  
+
   .bottom-left-arrow {
     left: 260px;
     top: 220px;
     transform: rotate(-40deg);
   }
-  
+
   .bottom-right-arrow {
     left: 440px;
     top: 220px;
@@ -167,6 +190,31 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .title {
+    margin-left: 50px;
+  }
+  .container {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .title {
+    margin-left: 90px;
+  }
+  .container {
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .title {
+    margin-left: 90px;
+  }
+  .container {
+    padding-right: 36px;
+    padding-left: 0;
+  }
+}
 
 /* mobile device start  */
 
@@ -176,7 +224,7 @@
   display: none;
 }
 .mobile-items {
-text-align: center;
+  text-align: center;
 }
 
 .mobile-items img {
@@ -200,12 +248,16 @@ text-align: center;
   transform: rotate(90deg);
   margin-left: -3.4px;
 }
-@media screen and (max-width:620px){
-   .container {
+@media screen and (max-width: 620px) {
+  .container {
     display: none;
-   }  
+  }
 
-.mobile-container {
-  display: block;
-}
+  .mobile-container {
+    display: block;
+  }
+  .title {
+    /* margin-left: -10px; */
+    margin-left: 0;
+  }
 }
